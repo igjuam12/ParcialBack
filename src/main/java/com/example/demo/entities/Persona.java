@@ -17,7 +17,6 @@ import java.util.List;
 @AllArgsConstructor
 @Getter
 @Setter
-@Builder
 @JsonIgnoreProperties("libros")// Ignora la propiedad libros al serializar a JSON
 public class Persona extends Base {
 

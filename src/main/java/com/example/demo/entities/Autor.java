@@ -15,7 +15,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+
 public class Autor extends Base{
     @Column(name ="nombre")
     private String nombre;
