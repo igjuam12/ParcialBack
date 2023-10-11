@@ -15,7 +15,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-
+@Builder
 public class Localidad extends Base{
     @Column(name = "denominacion")
     private String denominacion;
