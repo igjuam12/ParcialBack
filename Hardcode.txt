@@ -36,3 +36,5 @@
 			}
 
 		};
+
+//Falta la anotacion @Builder en cada clase
