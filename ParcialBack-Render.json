@@ -59,7 +59,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/persona",
+							"raw": "http://parcialback-ambrogetti-48907.onrender.com/api/v1/persona",
 							"protocol": "http",
 							"host": [
 								"localhost"
