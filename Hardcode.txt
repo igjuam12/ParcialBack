@@ -1,0 +1,38 @@
+@Bean
+	CommandLineRunner init(PersonaRepository personaRepository, AutorRepository autorRepository, DomicilioRepository domicilioRepository, LibroRepository libroRepository, LocalidadRepository localidadRepository) {
+		return args -> {
+
+			for(int i = 0; i<=20; i++){
+				Localidad localidad  = Localidad.builder()
+						.denominacion("La Boca-BsAs")
+						.build();
+				localidadRepository.save(localidad);
+				Domicilio domicilio = Domicilio.builder()
+						.calle("Brandsen")
+						.numero(805)
+						.localidad(localidad)
+						.build();
+				domicilioRepository.save(domicilio);
+				Persona persona = Persona.builder()
+						.nombre("Juan Roman")
+						.apellido("Riquelme")
+						.domicilio(domicilio)
+						.dni(38485221).libro(libro)
+						.build();
+				personaRepository.save(persona);
+				Libro libro = Libro.builder()
+						.fecha(23)
+						.genero("Genero: "+ 1)
+						.titulo("En busqueda de la septima")
+						.paginas(777)
+						.build();
+				libroRepository.save(libro);
+				Autor autor = Autor.builder()
+						.nombre("NombreAutor")
+						.apellido("ApellidoAutor")
+						.biografia("DescripcionAutor")
+						.build();
+				autorRepository.save(autor);
+			}
+
+		};

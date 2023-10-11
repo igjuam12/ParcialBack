@@ -1,0 +1,74 @@
+Autor
+
+{
+ "nombre" : "Juan",
+ "apellido" : "Gonzales",
+ "biografia" : "Hola soy Juan Gonzales"
+}
+
+Libro
+
+{
+    "titulo": "El secreto de la rana embrujada",
+    "fecha": 2020,
+    "genero": "Aventura",
+    "paginas": 20,
+    "autores": [
+        {
+            "id": 1,
+            "nombre": "Juan",
+            "apellido": "Gonzales",
+            "biografia": "Hola soy Juan Gonzales"
+        }
+    ]
+}
+
+-Localidad
+
+{
+    "denominacion" : "Lujan de Cuyo"
+}
+
+-Domicilio
+
+{
+    "calle" : "Viedma",
+    "numero" : 216,
+    "localidad" : {
+        "id" : 1,
+        "nombre" : "Lujan de Cuyo"
+    }
+}
+
+-Persona
+{
+    "nombre" : "Ignacio",
+    "apellido" : "Ambrogetti",
+    "dni" : 44404913,
+        "libro" : [
+        {
+        "id": 1,
+        "titulo": "El secreto de la rana embrujada",
+        "fecha": 2020,
+        "genero": "Aventura",
+        "paginas": 20,
+            "autores": [
+                {
+                "id": 1,
+                "nombre": "Juan",
+                "apellido": "Gonzales",
+                "biografia": "Hola soy Juan Gonzales"
+                }
+            ]
+        }
+    ],
+    "domicilio" : {
+        "id": 1,
+        "calle": "Viedma",
+        "numero": 216,
+        "localidad": {
+            "id": 1,
+            "denominacion": "Lujan de Cuyo"
+        }
+    }
+}
